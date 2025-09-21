@@ -1,0 +1,132 @@
+body {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  background: #111;
+}
+.navbar-brand {
+  font-weight: 700;
+  color: #0d6efd !important;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+              url("https://images.unsplash.com/photo-1508830524289-0adcbe822b40?q=80&w=825&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") 
+              no-repeat center center/cover;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #0d6efd;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #0b5ed7;
+}
+
+/* Sections */
+section {
+  padding: 80px 0;
+}
+
+/* Skills */
+.skills .badge {
+  font-size: 1rem;
+  padding: 12px 20px;
+  background: #0d6efd;
+  color: #fff;
+  margin: 8px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+.skills .badge:hover {
+  background: #0b5ed7;
+  transform: scale(1.05);
+}
+
+/* Cards */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Coming Soon cards */
+.coming-soon {
+  background: linear-gradient(135deg, #f0f0f0, #fafafa);
+  border: 2px dashed #ccc;
+  text-align: center;
+}
+.coming-soon .card-title {
+  color: #0d6efd;
+  font-weight: 600;
+}
+
+/* Team Section */
+.team-card {
+  position: relative;
+  overflow: hidden;
+  border: none;
+}
+.team-card img {
+  border-radius: 50%;
+  margin-top: 20px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+.team-card .card-body {
+  text-align: center;
+}
+.team-card .social-links {
+  margin-top: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.team-card:hover .social-links {
+  opacity: 1;
+}
+.team-card .social-links a {
+  margin: 0 8px;
+  font-size: 1.3rem;
+  color: #0d6efd;
+  transition: color 0.3s;
+}
+.team-card .social-links a:hover {
+  color: #0b5ed7;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: #bbb;
+  padding: 20px 0;
+}
+footer p {
+  margin: 0;
+}
